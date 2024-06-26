@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #4169E1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  height: 100vh;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+#main-container {
+  background-color: white;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 5px;
+  max-width: 468px;
+  min-width: 0;
+  box-shadow: 5px 10px 20px #15234c9d;
+}
+
+.row-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.definition {
+  height: 0;
+  overflow: hidden;
+  transition: all .1s linear;
+}
+
+.show {
+  height: 75px;
+  cursor: pointer;
+}
+
+#text-input {
+  border: none;
+  padding: 10px 0;
+  font-size: 17px;
+  border-bottom: 1px solid rgb(170, 170, 170);
+  background-color: transparent;
+  min-width: 0;
+}
+
+#text-input:focus {
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+#check-btn {
+  background-color: #4169E1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  min-width: 70px;
+  height: 46px;
+  transition: transform .05s linear;
+}
+
+#check-btn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+#result {
+  color: white;
+  background-color: red;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 0;
+  opacity: 0;
+  transition: opacity .08s linear,
+              background-color .07s linear;
+}
+
+i {
+  font-size: 21px;
+  color: grey;
+  transition: color .5s linear;
+}
+
+i.on {
+  color: orange;
+}
+
+i:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
